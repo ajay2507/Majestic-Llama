@@ -1,6 +1,5 @@
 $('#navbar a').click(function(e) {
 var txt = $(e.target).text();
-console.log(txt);
 if(txt == "Am i Useful"){
 	if($("#useful1").hasClass("animated bounceInDown") == false){
 	$("#useful1").addClass("animated bounceInDown");
@@ -10,16 +9,18 @@ if(txt == "Am i Useful"){
 });
 
 $(document).ready(function() {
-  alert("loading");
+
   $("#useful1").removeClass("animated bounceInDown");
 	$("#useful2").removeClass("animated bounceInDown");
 	$("#useful3").removeClass("animated bounceInDown");
-});
 
-$('.hover1').mouseover(function() {
-  $('.text').css("visibility","visible");
-});
+	$('.education').hover(
+		function(){
 
-$('.hover1').mouseout(function() {
-  $('.text').css("visibility","hidden");
+			$(this).find('.imgslider').slideDown(250);
+		},
+		function(){
+			$(this).find('.imgslider').slideUp(250);
+		}
+	);
 });
