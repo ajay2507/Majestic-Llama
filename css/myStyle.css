@@ -1,19 +1,26 @@
+/*
+ * Author: Ajaykumar Prathap
+ */
+
+
+/* =================
+   General Styles
+   ================== */
+
+
+
 body{
 
 	background-color: #F4F4F4;
 	font-weight: 400;
-	    font-size: 16px;
-	    color: #000;}
+	font-size: 16px;
+	color: #000;
+		}
 
-img.background{
+/* =================
+		   nav bar Styles
+ ================== */
 
-	left:0px;
-	top:0px;
-	width:100%;
-	opacity:0.8;
-	display:none;
-}
-.
 .menubar-img img{
 	  margin-top: -10px;
    display: inline;
@@ -41,14 +48,17 @@ header nav {
 .navbar-brand img{
 	margin-top: -10px;
 }
-#aboutme p{
-	text-align:justify;
-}
 .menu > li {
   display: inline;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+
+/* =================
+		   Home section Styles
+ ================== */
+
 .sectioncss{
 	clear: both;
     width: 100%;
@@ -56,6 +66,7 @@ header nav {
     min-height: 100px;
     position: static;
 }
+
 .content-detail{
 	position: relative;
 }
@@ -64,10 +75,10 @@ header nav {
    width: 100%; /* for IE 6 */
 }
 
-.bodyrow {
+.home {
 	margin-top: -20px
 }
-.bodyrow > img{
+.home > img{
 
     width: 100%;
     display: flex;
@@ -75,10 +86,20 @@ header nav {
 
 }
 
-
+/* =====================================================
+		   About llama section Styles
+ ====================================================== */
 .aboutme{
 	margin-top: 25px;
 
+}
+#aboutme p{
+	text-align:justify;
+}
+.aboutme h4{
+	font-size: 24px;
+  color: #737373;
+  margin-bottom: 12px;
 }
 .details span{
 	display: block;
@@ -89,6 +110,77 @@ header nav {
     margin-top: 15px;
 
 }
+
+/* =====================================================
+		   llama power section Styles
+ ====================================================== */
+
+.useful h4{
+	font-size: 24px;
+    color: #737373;
+    margin-bottom: 10px;
+}
+
+
+.content-details{
+	background: #2a2a2a;
+  border-top: 2px solid #fff;
+  transition: all .7s ease 0s;
+  -webkit-transition: all .7s ease 0s;
+	-moz-transition: all .7s ease 0s;
+	-ms-transition: all .7s ease 0s;
+	-o-transition: all .7s ease 0s;
+}
+.content-details p{
+font-size: 16px;
+color: #fff;
+text-align:justify;
+padding: 0 25px;
+padding-bottom: 30px;
+}
+.content-details h3{
+	font-size: 25px;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* =====================================================
+		   llama facts section Styles
+ ====================================================== */
+ .totalfacts h4{
+     font-size: 24px;
+     color: #737373;
+     margin-top: 0;
+     margin-bottom: 45px;
+ }
+ .fact-detail{
+ 	  padding: 10px;
+     background: #1a1b1c;
+     position: relative;
+     transition: all .7s ease 0s;
+     -webkit-transition: all .7s ease 0s;
+ 		-moz-transition: all .7s ease 0s;
+ 		-ms-transition: all .7s ease 0s;
+ 		 -o-transition: all .7s ease 0s;
+ }
+ .single-member{
+ 	margin:0;
+ 	padding:0;
+ }
+ .fact-detail p{
+ 	font-size: 16px;
+ 	text-align: justify;
+ color: #fff;
+ }
+ .total-facts h4{
+ 	    color: #737373;
+ }
+
+
+ /* =====================================================
+ 		   developer section Styles
+  ====================================================== */
+
 .skills{
 	margin-left: 100px;
 	font-size: 16px;
@@ -123,6 +215,18 @@ left: 0;
 -webkit-animation: move 5s;
 -webkit-animation-iteration-count: infinite;
 -webkit-animation-delay: 1s;
+
+-moz-animation: move 5s;
+-ms-animation: move 5s;
+-o-animation: move 5s;
+
+-moz-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+
+-moz-animation-delay: 1s;
+-ms-animation-delay: 1s;
+-o-animation-delay: 1s;
 }
 @keyframes move {
 0%  { top: 0px; }
@@ -157,6 +261,55 @@ left: 0;
 .imgchange{
 	margin-top: 15px;
 }
+/* =====================================================
+		    fading out and fading in Styles
+ ====================================================== */
+
+.imgslider{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/trans-black-80.png);
+	width: 93%;
+	height: 100%;
+	margin-left:15px;
+}
+
+.imgslider h3, .imgslider p {
+	color: #fff;
+	margin: 20px;
+}
+.imgslider h3 {
+	margin: 20px 20px 10px;
+	font-family: 'Oswald', sans-serif;
+}
+.imgslider p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: 0 20px 15px;
+	font-family: cursive;
+	color: #d9edf7;
+}
+.imgslider a.learn-more {
+	padding: 5px 10px;
+	background: #08c;
+	color: #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.imgslider a.learn-more:hover {
+	background: #fff;
+	color: #08c;
+}
+
+
+/* =====================================================
+		   contact section Styles
+ ====================================================== */
+
 .contact{
 	background-color: #292c2f;
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -233,106 +386,4 @@ font-size: 14px;
 padding-top: 50px;
 font-weight: normal;
 margin: 0;
-}
-
-
-
-
-
-
-.totalfacts h4{
-font-size: 24px;
-    color: #737373;
-    margin-top: 0;
-    margin-bottom: 45px;
-}
-.fact-detail{
-	padding: 10px;
-    background: #1a1b1c;
-    position: relative;
-    transition: all .7s ease 0s;
-    -webkit-transition: all .7s ease 0s;
-}
-.single-member{
-	margin:0;
-	padding:0;
-}
-.fact-detail p{
-	font-size: 16px;
-	text-align: justify;
-color: #fff;
-}
-.total-facts h4{
-	    color: #737373;
-}
-
-.useful h4{
-	font-size: 24px;
-    color: #737373;
-    margin-bottom: 10px;
-}
-
-.aboutme h4{
-	font-size: 24px;
-    color: #737373;
-    margin-bottom: 12px;
-}
-.content-details{
-	background: #2a2a2a;
-    border-top: 2px solid #fff;
-    transition: all .7s ease 0s;
-    -webkit-transition: all .7s ease 0s;
-}
-.content-details p{
-	font-size: 16px;
-color: #fff;
-text-align:justify;
-padding: 0 25px;
-padding-bottom: 30px;
-}
-.content-details h3{
-	font-size: 25px;
-color: #fff;
-margin-top: 0;
-}
-
-
-.imgslider{
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: url(../img/trans-black-80.png);
-	width: 93%;
-	height: 100%;
-	margin-left:15px;
-}
-
-.imgslider h3, .imgslider p {
-	color: #fff;
-	margin: 20px;
-}
-.imgslider h3 {
-	margin: 20px 20px 10px;
-	font-family: 'Oswald', sans-serif;
-}
-.imgslider p {
-	font-size: 1.1em;
-	line-height: 1.5em;
-	margin: 0 20px 15px;
-	font-family: cursive;
-	color: #d9edf7;
-}
-.imgslider a.learn-more {
-	padding: 5px 10px;
-	background: #08c;
-	color: #fff;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	font-weight: bold;
-	text-decoration: none;
-}
-.imgslider a.learn-more:hover {
-	background: #fff;
-	color: #08c;
 }
