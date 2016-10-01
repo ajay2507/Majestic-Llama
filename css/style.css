@@ -1,0 +1,237 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+h1{
+
+}
+h2{
+
+}
+header, section, footer, nav, aside, article {
+  display: block;
+}
+html, body{
+  height:100%;
+}
+body{
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 400;
+	  font-size: 16px;
+    background-color: #fff
+
+}
+.mainWrapper{
+  width:100%;
+  height:100%;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.sidebar-wrapper.menu-expand{
+  left:0px;
+}
+.sidebar-wrapper{
+  height:100%;
+  width:200px;
+  position:fixed;
+  left: -200px;
+  z-index: 10;
+}
+.sidebar-menu{
+position:fixed;
+top: 50px;
+left: 60px;
+cursor: pointer;
+z-index: 999;
+}
+.sidebar{
+  width: 23px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 3px;
+  display: block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+
+}
+.navigation{
+  padding-top: 100px;
+  padding-left: 60px;
+  background: black;
+  height:100%;
+}
+.navigation a
+{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.home{
+  background: url(../img/theme.jpg);
+  height:100%;
+
+  background-size:cover;
+}
+.img-home{
+  border-radius: 50%;
+  height:200px;
+  width:200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.img-home:hover
+{
+  background-position: 17% 13%;
+background-size: 137%;
+}
+.text-home{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 900;
+}
+.aboutme{
+  margin-top: 50px;
+  text-align: justify;
+}
+.resume-download{
+margin-left: 350px;
+margin-top: 100px;
+}
+.resume-download a{
+    color: #d0cdcd;
+}
+
+
+.img-skills{
+  width:100%;
+}
+.section-title{
+  text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    color: white;
+    padding-top: 40px;
+}
+.skills{
+  background-image: url(../img/skills.jpg);
+  background-size: 100%;
+  height:100%;
+  -webkit-background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+
+
+
+
+/* =====================================================
+		   contact section Styles
+ ====================================================== */
+ .img-section{
+   height:75%;
+ }
+.img-contact{
+  background-image: url(../img/contact.jpg);
+  vertical-align: middle;
+background-size: 100%;
+height:400px;
+margin-bottom: -80px;
+-webkit-background-size: cover !important;
+background-repeat: no-repeat !important;
+background-position: center center !important;
+}
+
+.contact{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+
+text-align: left;
+font: bold 16px sans-serif;
+padding: 55px 50px;
+margin-top: 80px;
+
+}
+.contact .left-footer{
+width: 40%;
+display: inline-block;
+vertical-align: top;
+}
+.contact .center-footer{
+	    width: 35%;
+			display: inline-block;
+    vertical-align: top;
+}
+.contact .right-footer{
+	    width: 20%;
+			display: inline-block;
+    vertical-align: top;
+}
+.contact copyright{
+	color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0
+}
+.contact .center-footer i{
+	background-color: #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+.contact .center-footer p{
+	display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin: 0;
+}
+.contact .social-icons a{
+	display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.contact h3{
+	color: #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+
+.contact .copyright{
+	color: #8f9296;
+font-size: 14px;
+padding-top: 50px;
+font-weight: normal;
+margin: 0;
+}
