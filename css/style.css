@@ -1,13 +1,14 @@
+/* =====================================================
+		   CSS Style Sheet for MyWebsite
+       Ajaykumar Prathap
+ ====================================================== */
+
+ /* common stylings */
 *{
   margin:0px;
   padding: 0px;
 }
-h1{
 
-}
-h2{
-
-}
 header, section, footer, nav, aside, article {
   display: block;
 }
@@ -18,13 +19,19 @@ body{
     width: 100%;
     font-family: Roboto;
     font-weight: 400;
-	  font-size: 16px;
+	  font-size: 16px !important;
     background-color: #fff
 
 }
+
+/* Stylings for home page */
+@media screen and (min-width: 900px) {
+   .mainWrapper{
+     height: 100%;
+     }}
 .mainWrapper{
   width:100%;
-  height:100%;
+
   margin-top: 0px;
   color: #fff;
 }
@@ -41,8 +48,8 @@ body{
 }
 .sidebar-menu{
 position:fixed;
-top: 50px;
-left: 60px;
+top: 40px;
+left: 40px;
 cursor: pointer;
 z-index: 999;
 }
@@ -56,6 +63,15 @@ z-index: 999;
   transition: all .3s ease;
 
 }
+.menu-close{
+  margin-top: 40px;
+    margin-left: 150px;
+    color: #808080;
+    position: absolute;
+}
+.resume-download a:hover,.menu-close:hover{
+  color: white;
+}
 .navigation{
   padding-top: 100px;
   padding-left: 60px;
@@ -64,7 +80,7 @@ z-index: 999;
 }
 .navigation a
 {
-    color: #fff;
+    color: #808080;
     text-decoration: none;
     outline: none;
     outline-offset: 0;
@@ -73,6 +89,10 @@ z-index: 999;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
+}
+.navigation a:hover{
+  text-decoration: none;
+  color:white;
 }
 nav ul li{
   list-style: none;
@@ -103,9 +123,25 @@ background-size: 137%;
     font-size: 18px;
     font-weight: 900;
 }
+.marker_home{
+  content: '';
+    position: inherit;
+    background: #f1f1f1;
+    width: 7.5em;
+    height: 0.275em;
+    left: 0;
+    right: 0;
+    /* top: 53px; */
+    margin: 20px auto;
+    bottom: -1.5em;
+}
+.intro{
+  margin-top:60px;
+  font-style:italic;
+}
 .aboutme{
   margin-top: 50px;
-  text-align: justify;
+  text-align: center;
 }
 .resume-download{
 margin-left: 350px;
@@ -115,6 +151,9 @@ margin-top: 100px;
     color: #d0cdcd;
 }
 
+/* =====================================================
+		   Skills section Styles
+ ====================================================== */
 
 .img-skills{
   width:100%;
@@ -130,16 +169,157 @@ margin-top: 100px;
 .skills{
   background-image: url(../img/skills.jpg);
   background-size: 100%;
-  height:100%;
+  color: white;
   -webkit-background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
 }
+@media screen and (min-width: 900px) {
+   .skills{
+     height: 100%;
+     }}
+.interest h4{
+  display: inline;
+}
+.interest p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.skill-bar ul{
+  list-style: none;
+  padding:0;
+}
+.skill-bar{
+      margin-top: 30px;
+}
+.skill-bar ul li{
+  height: 35px;
+line-height: 35px;
+width: 100%;
+background: #a69d9d;
+position: relative;
+margin-bottom: 15px;
+}
+.bar{
+  padding-left: 15px;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+.skill-bar ul li h5{
+  margin: 0;
+    color: #FFF;
+    line-height: 35px;
+    position: absolute;
+    font-weight: 700;
+}
+.tools{
+  margin-top: 20px;
+}
+
+.tools ul li{
+  display: inline;
+  padding-left: 15px;
+}
 
 
+/* =====================================================
+		   Education and Experience section Styles
+ ====================================================== */
 
 
+.experience{
+  background-color :#2f3238;
+  background-image: url(../img/exp2.jpg);
+  -webkit-background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  }
+.experience-content{
+  min-height: 180px;
+    color:#444444;
+    background: #d3d3d3;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.experience-content:hover{
+  background:white;
+}
+.subheading{
+  margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.exp-text p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 22px;
 
+}
+.exp-date{
+  font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    padding: 18px;
+}
+.exp-marker{
+  background-color: #a69d9d;
+/* width: 250px; */
+height: 60px;
+color: #fff;
+border-radius: 5px;
+text-align: center;
+margin-top: 55px;
+position: relative;
+}
+.exp-text{
+  text-align: right;
+}
+.first{
+  margin-top: 20px;
+}
+.exp-heading{
+text-align: center;
+}
+.marker{
+  content: '';
+    position:inherit ;
+    background: #4d4d4d;
+    width: 4.5em;
+    height: 0.375em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -1.5em;
+}
+.arrow{
+  border-style: solid;
+    border-width: 9px;
+    width: 0;
+    height: 0;
+    /* float: left; */
+    left: -18px;
+    top: 20px;
+    position: absolute;
+    border-color: transparent #a69d9d transparent transparent;
+}
+.arrow-right{
+  border-style: solid;
+    border-width: 9px;
+    width: 0;
+    height: 0;
+    /* float: left; */
+    right: -18px;
+    top: 20px;
+    position: absolute;
+    border-color: transparent transparent transparent  #a69d9d  ;
+
+}
 /* =====================================================
 		   contact section Styles
  ====================================================== */
