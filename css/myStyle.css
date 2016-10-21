@@ -1,0 +1,389 @@
+/*
+ * Author: Ajaykumar Prathap
+ */
+
+
+/* =================
+   General Styles
+   ================== */
+
+
+
+body{
+
+	background-color: #F4F4F4;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000;
+		}
+
+/* =================
+		   nav bar Styles
+ ================== */
+
+.menubar-img img{
+	  margin-top: -10px;
+   display: inline;
+}
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+.navbar-brand img{
+	margin-top: -10px;
+}
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* =================
+		   Home section Styles
+ ================== */
+
+.sectioncss{
+	clear: both;
+    width: 100%;
+    float: left;
+    min-height: 100px;
+    position: static;
+}
+
+.content-detail{
+	position: relative;
+}
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+.home {
+	margin-top: -20px
+}
+.home > img{
+
+    width: 100%;
+    display: flex;
+    height: 80%;
+
+}
+
+/* =====================================================
+		   About llama section Styles
+ ====================================================== */
+.aboutme{
+	margin-top: 25px;
+
+}
+#aboutme p{
+	text-align:justify;
+}
+.aboutme h4{
+	font-size: 24px;
+  color: #737373;
+  margin-bottom: 12px;
+}
+.details span{
+	display: block;
+    color: #545454;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 15px;
+
+}
+
+/* =====================================================
+		   llama power section Styles
+ ====================================================== */
+
+.useful h4{
+	font-size: 24px;
+    color: #737373;
+    margin-bottom: 10px;
+}
+
+
+.content-details{
+	background: #2a2a2a;
+  border-top: 2px solid #fff;
+  transition: all .7s ease 0s;
+  -webkit-transition: all .7s ease 0s;
+	-moz-transition: all .7s ease 0s;
+	-ms-transition: all .7s ease 0s;
+	-o-transition: all .7s ease 0s;
+}
+.content-details p{
+font-size: 16px;
+color: #fff;
+text-align:justify;
+padding: 0 25px;
+padding-bottom: 30px;
+}
+.content-details h3{
+	font-size: 25px;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* =====================================================
+		   llama facts section Styles
+ ====================================================== */
+ .totalfacts h4{
+     font-size: 24px;
+     color: #737373;
+     margin-top: 0;
+     margin-bottom: 45px;
+ }
+ .fact-detail{
+ 	  padding: 10px;
+     background: #1a1b1c;
+     position: relative;
+     transition: all .7s ease 0s;
+     -webkit-transition: all .7s ease 0s;
+ 		-moz-transition: all .7s ease 0s;
+ 		-ms-transition: all .7s ease 0s;
+ 		 -o-transition: all .7s ease 0s;
+ }
+ .single-member{
+ 	margin:0;
+ 	padding:0;
+ }
+ .fact-detail p{
+ 	font-size: 16px;
+ 	text-align: justify;
+ color: #fff;
+ }
+ .total-facts h4{
+ 	    color: #737373;
+ }
+
+
+ /* =====================================================
+ 		   developer section Styles
+  ====================================================== */
+
+.skills{
+	margin-left: 100px;
+	font-size: 16px;
+	background-color: #F4F4F4;
+
+}
+.skills p{
+	display: inline-block;
+	font-weight: 600;
+}
+.skills i{
+
+		font-size: 2.25vw;
+
+}
+.frontend{
+	margin-top:25px;
+	margin-right:200px;
+	margin-left:90px;
+}
+.frontend p{
+	text-align: justify;
+}
+
+.developer span1 {
+ display: inline-block;
+color: #646965;
+position: relative;
+white-space: nowrap;
+top: 0;
+left: 0;
+-webkit-animation: move 5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 1s;
+
+-moz-animation: move 5s;
+-ms-animation: move 5s;
+-o-animation: move 5s;
+
+-moz-animation-iteration-count: infinite;
+-ms-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+
+-moz-animation-delay: 1s;
+-ms-animation-delay: 1s;
+-o-animation-delay: 1s;
+}
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+
+.btn-resume{
+	float: right;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+.margintop{
+	margin-top: 10px;
+}
+.languages{
+	display: inline-block;
+	margin-top:10px;
+}
+.languages li{
+	display: inline !important;
+    text-transform: uppercase;
+    list-style: none;
+    font-family: sans-serif;
+    padding-right: 10px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.imgchange{
+	margin-top: 15px;
+}
+/* =====================================================
+		    fading out and fading in Styles
+ ====================================================== */
+
+.imgslider{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/trans-black-80.png);
+	width: 93%;
+	height: 100%;
+	margin-left:15px;
+}
+
+.imgslider h3, .imgslider p {
+	color: #fff;
+	margin: 20px;
+}
+.imgslider h3 {
+	margin: 20px 20px 10px;
+	font-family: 'Oswald', sans-serif;
+}
+.imgslider p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: 0 20px 15px;
+	font-family: cursive;
+	color: #d9edf7;
+}
+.imgslider a.learn-more {
+	padding: 5px 10px;
+	background: #08c;
+	color: #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.imgslider a.learn-more:hover {
+	background: #fff;
+	color: #08c;
+}
+
+
+/* =====================================================
+		   contact section Styles
+ ====================================================== */
+
+.contact{
+	background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 55px 50px;
+margin-top: 80px;
+
+}
+.contact .left-footer{
+	    width: 40%;
+			display: inline-block;
+    vertical-align: top;
+}
+.contact .center-footer{
+	    width: 35%;
+			display: inline-block;
+    vertical-align: top;
+}
+.contact .right-footer{
+	    width: 20%;
+			display: inline-block;
+    vertical-align: top;
+}
+.contact copyright{
+	color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0
+}
+.contact .center-footer i{
+	background-color: #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+.contact .center-footer p{
+	display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin: 0;
+}
+.contact .social-icons a{
+	display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.contact h3{
+	color: #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+
+.contact .copyright{
+	color: #8f9296;
+font-size: 14px;
+padding-top: 50px;
+font-weight: normal;
+margin: 0;
+}
